@@ -16,6 +16,12 @@ _global_script_class_icons={
 [application]
 
 config/name="sinasi"
+run/main_scene="res://TestWorld.tscn"
+boot_splash/fullsize=false
+
+[locale]
+
+locale_filter=[ 0, [  ] ]
 
 [rendering]
 

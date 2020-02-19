@@ -4,6 +4,7 @@
 [ext_resource path="res://KBodySinasi.gd" type="Script" id=2]
 
 [node name="TestWorld" type="Node2D"]
+position = Vector2( 8, 8 )
 __meta__ = {
 "_edit_group_": true
 }
