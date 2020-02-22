@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="sinasi"
-run/main_scene="res://Scenes/Walk.tscn"
+run/main_scene="res://Scenes/Platform.tscn"
 run/disable_stdout=true
 boot_splash/fullsize=false
 
