@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/Scripts/PlayerPlatform.gd" type="Script" id=1]
+[ext_resource path="res://Objects/Wall.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/Textures/sinasi_icon_1.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 13, 16 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="KBodySinasi" type="KinematicBody2D" parent="."]
+position = Vector2( 88, 56 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="SpriteSinasi" type="Sprite" parent="KBodySinasi"]
+scale = Vector2( 3, 3 )
+texture = ExtResource( 3 )
+
+[node name="ColShapeSinasi" type="CollisionShape2D" parent="KBodySinasi"]
+shape = SubResource( 1 )
+
+[node name="Ground" type="Node" parent="."]
+
+[node name="Wall" parent="Ground" instance=ExtResource( 2 )]
+position = Vector2( 87.8216, 184.748 )
+
+[node name="Wall2" parent="Ground" instance=ExtResource( 2 )]
+position = Vector2( 143.564, 185.885 )
+
+[node name="Wall3" parent="Ground" instance=ExtResource( 2 )]
+position = Vector2( 187.93, 162.565 )
+
+[node name="Wall4" parent="Ground" instance=ExtResource( 2 )]
+position = Vector2( 237.416, 139.244 )
+
+[node name="Wall5" parent="Ground" instance=ExtResource( 2 )]
+position = Vector2( 303.898, 114.75 )
