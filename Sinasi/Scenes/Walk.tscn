@@ -9,14 +9,14 @@ extents = Vector2( 3.58801, 4.72211 )
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Player" type="KinematicBody2D" parent="."]
+[node name="KBodySinasi" type="KinematicBody2D" parent="."]
 position = Vector2( 25, 25 )
 script = ExtResource( 2 )
 
-[node name="Sprite" type="Sprite" parent="Player"]
+[node name="SpriteSinasi" type="Sprite" parent="KBodySinasi"]
 texture = ExtResource( 1 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+[node name="ColShapeSinasi" type="CollisionShape2D" parent="KBodySinasi"]
 visible = false
 shape = SubResource( 1 )
 
