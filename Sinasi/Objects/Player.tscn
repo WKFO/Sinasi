@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Textures/sinasi_icon_1.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 3.58801, 4.72211 )
+
+[node name="Sinasi" type="KinematicBody2D"]
+
+[node name="SpriteSinasi" type="Sprite" parent="."]
+position = Vector2( -0.0112114, -0.0476761 )
+texture = ExtResource( 2 )
+
+[node name="ColShapeSinasi" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2( -0.0112114, -0.0476761 )
+shape = SubResource( 1 )

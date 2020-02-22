@@ -1,27 +1,14 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Assets/Scripts/PlayerPlatform.gd" type="Script" id=1]
 [ext_resource path="res://Objects/Wall.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Assets/Textures/sinasi_icon_1.png" type="Texture" id=3]
-
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 13, 16 )
+[ext_resource path="res://Objects/Player.tscn" type="PackedScene" id=3]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="KBodySinasi" type="KinematicBody2D" parent="."]
-position = Vector2( 88, 56 )
+[node name="Player" parent="." instance=ExtResource( 3 )]
+position = Vector2( 88.8878, 111.781 )
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="SpriteSinasi" type="Sprite" parent="KBodySinasi"]
-scale = Vector2( 3, 3 )
-texture = ExtResource( 3 )
-
-[node name="ColShapeSinasi" type="CollisionShape2D" parent="KBodySinasi"]
-shape = SubResource( 1 )
 
 [node name="Ground" type="Node" parent="."]
 
