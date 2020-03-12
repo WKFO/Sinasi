@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sinasi_icon_1.png-b0cd63e748972e3fe48c6d648d75c865.stex"
+path="res://.import/bg_wood.jpg-3469cfbf821a43b1fa9aee2598a5d88d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Textures/sinasi_icon_1.png"
-dest_files=[ "res://.import/sinasi_icon_1.png-b0cd63e748972e3fe48c6d648d75c865.stex" ]
+source_file="res://Assets/Textures/bg_wood.jpg"
+dest_files=[ "res://.import/bg_wood.jpg-3469cfbf821a43b1fa9aee2598a5d88d.stex" ]
 
 [params]
 
